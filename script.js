@@ -1,0 +1,11 @@
+const menuBtn=document.getElementById("menuBtn"),navLinks=document.getElementById("navLinks");
+menuBtn?.addEventListener("click",()=>{const isOpen=navLinks.classList.toggle("show");menuBtn.setAttribute("aria-expanded",String(isOpen));menuBtn.textContent=isOpen?"×":"☰"});
+document.querySelectorAll(".nav-links a").forEach(link=>link.addEventListener("click",()=>{navLinks.classList.remove("show");menuBtn?.setAttribute("aria-expanded","false");if(menuBtn)menuBtn.textContent="☰"}));
+const sections=[...document.querySelectorAll("main section[id]")],navItems=[...document.querySelectorAll(".nav-links a")];
+const updateActiveLink=()=>{const position=window.scrollY+140;let current="home";sections.forEach(section=>{if(section.offsetTop<=position)current=section.id});navItems.forEach(item=>item.classList.toggle("active",item.getAttribute("href")===`#${current}`))};
+window.addEventListener("scroll",updateActiveLink,{passive:true});
+const filters=document.querySelectorAll(".filter"),projects=document.querySelectorAll(".project-card");
+filters.forEach(button=>button.addEventListener("click",()=>{filters.forEach(item=>item.classList.remove("active"));button.classList.add("active");const selected=button.dataset.filter;projects.forEach(project=>{project.style.display=selected==="all"||project.dataset.category===selected?"":"none"})}));
+document.querySelectorAll(".section-heading,.skill-card,.project-card,.timeline-item,.achievement-grid,.resume-card,.contact-card").forEach(element=>element.classList.add("reveal"));
+const revealObserver=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add("visible");revealObserver.unobserve(entry.target)}})},{threshold:.12});
+document.querySelectorAll(".reveal").forEach(element=>revealObserver.observe(element));

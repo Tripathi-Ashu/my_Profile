@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sonal Jaiswal - Software Engineer and Full Stack Developer portfolio">
+  <title>Sonal Jaiswal | Software Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="nav-wrap">
+      <a class="brand" href="#home" aria-label="Sonal Jaiswal home"><span>S</span><strong>Sonal Jaiswal</strong></a>
+      <nav class="nav-links" id="navLinks" aria-label="Primary navigation">
+        <a class="active" href="#home">Home</a><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#resume">Resume</a>
+      </nav>
+      <a class="nav-cta" href="#contact">Let's talk <span aria-hidden="true">↗</span></a>
+      <button class="menu-btn" id="menuBtn" type="button" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    </div>
+  </header>
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-grid container">
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span> Available for opportunities</p>
+          <h1>Building intelligent<br><em>digital experiences.</em></h1>
+          <p class="hero-lead">I’m Sonal, an AI &amp; Software Developer building intelligent applications with Python, machine learning, React.js, APIs, and full stack solutions.</p>
+          <div class="hero-actions"><a class="button button-primary" href="#projects">View my work <span>→</span></a><a class="button button-secondary" href="assets/Sonal_Jaiswal_Resume.pdf" download="Sonal_Jaiswal_Resume.pdf">Download resume</a></div>
+          <div class="hero-meta"><div><strong>3+</strong><span>Featured projects</span></div><div><strong>2</strong><span>IBM internships</span></div><div><strong>8/10</strong><span>B.Tech CGPA</span></div></div>
+        </div>
+        <div class="hero-art" aria-label="Software engineering profile illustration">
+          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+          <div class="portrait-card"><img src="assets/sonal-jaiswal.jpg" alt="Sonal Jaiswal"></div>
+          <div class="floating-chip chip-react"><span>AI</span><div><strong>AI Developer</strong><small>ML &amp; Generative AI</small></div></div>
+          <div class="floating-chip chip-node"><span>&lt;/&gt;</span><div><strong>Full Stack</strong><small>Web development</small></div></div>
+        </div>
+      </div>
+    </section>
+    <section class="about section" id="about">
+      <div class="container about-grid">
+        <div class="section-heading"><p class="kicker">About me</p><h2>Turning ideas into reliable,<br><em>scalable products.</em></h2></div>
+        <div class="about-copy"><p>Software Engineer with hands-on experience in frontend and web development using React.js, JavaScript, HTML5, and CSS3.</p><p>I work across the full stack with Node.js, Express.js, Python, Flask, MongoDB, MySQL, REST APIs, and Git—combining strong problem-solving with clean, responsive interfaces.</p><div class="about-facts"><div><span>Education</span><strong>B.Tech CSE · SRMCEM</strong></div><div><span>Location</span><strong>Lucknow, Uttar Pradesh</strong></div></div></div>
+      </div>
+    </section>
+    <section class="skills section" id="skills">
+      <div class="container">
+        <div class="section-heading centered"><p class="kicker">Technical toolkit</p><h2>Skills &amp; technologies</h2></div>
+        <div class="skill-grid">
+          <article class="skill-card"><div class="skill-icon coral">#</div><h3>Frontend</h3><p>React.js, JavaScript ES6+, HTML5, CSS3, Responsive Design, AJAX, Axios, EJS</p></article>
+          <article class="skill-card"><div class="skill-icon blue">&lt;/&gt;</div><h3>Backend &amp; APIs</h3><p>Node.js, Express.js, Flask, Django, REST APIs, Microservices, Authentication</p></article>
+          <article class="skill-card"><div class="skill-icon yellow">{ }</div><h3>Languages</h3><p>JavaScript, Python, C, C++, Java, SQL</p></article>
+          <article class="skill-card"><div class="skill-icon green">DB</div><h3>Data &amp; Tools</h3><p>MongoDB, MySQL, Git, GitHub, Linux, Render, Vercel, Multer, Passport.js</p></article>
+          <article class="skill-card"><div class="skill-icon coral">AI</div><h3>AI Development</h3><p>Python, TensorFlow, PyTorch, Scikit-learn, Machine Learning, REST API Integration, Generative AI</p></article>
+        </div>
+      </div>
+    </section>
+    <section class="projects section" id="projects">
+      <div class="container">
+        <div class="projects-heading"><div class="section-heading"><p class="kicker">Selected work</p><h2>Projects with purpose.</h2></div><div class="filters" aria-label="Project filters"><button class="filter active" type="button" data-filter="all">All</button><button class="filter" type="button" data-filter="fullstack">Full stack</button><button class="filter" type="button" data-filter="ai">AI</button><button class="filter" type="button" data-filter="frontend">Frontend</button></div></div>
+        <div class="project-grid">
+          <article class="project-card featured" data-category="fullstack"><div class="project-visual"><img class="project-image" src="assets/smart-mandi.png" alt="Smart Mandi digital procurement platform"></div><div class="project-copy"><div class="project-number">SIH</div><p class="project-type">SIH 2026 · Problem Statement 32 · Mandi Platform</p><h3>Smart Mandi: Farmer Procurement</h3><p>A digital procurement platform that helps farmers book procurement slots, track queues in real time, and receive procurement updates.</p><div class="tags"><span>React</span><span>Full Stack</span><span>Farmer Procurement</span><span>SIH 2026</span></div><div class="project-actions"><a href="https://farmer-procruement-sih-26-ftkj.vercel.app/" target="_blank" rel="noopener noreferrer">Live demo ↗</a><a href="https://github.com/jaiswal-sonal/Farmer-Procruement-SIH-26-.git" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div></div></article>
+          <article class="project-card" data-category="frontend"><div class="project-visual sorting-visualizer"><div class="sorting-bars"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div></div><div class="project-copy"><div class="project-number">05</div><p class="project-type">Data Structures &amp; Algorithms · Visualization</p><h3>Sorting Visualizer</h3><p>An interactive algorithm visualization tool that demonstrates sorting techniques through animated comparisons and array operations.</p><div class="tags"><span>JavaScript</span><span>DSA</span><span>Algorithms</span><span>Visualization</span></div><div class="project-actions"><a href="https://shorting-visualizer-ochre.vercel.app/" target="_blank" rel="noopener noreferrer">Live demo ↗</a><a href="https://github.com/jaiswal-sonal/shorting_visualizer.git" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div></div></article>
+          <article class="project-card" data-category="fullstack"><div class="project-visual"><img class="project-image" src="assets/steganography.png" alt="Text encryption using steganography application"></div><div class="project-copy"><div class="project-number">01</div><p class="project-type">Full Stack · Flask · Security</p><h3>Text Encryption Using Steganography</h3><p>Hide encrypted text inside images using password protection and a secure Flask backend, with separate encryption and extraction workflows.</p><div class="tags"><span>Python</span><span>Flask</span><span>JavaScript</span><span>Render</span></div><div class="project-actions"><a href="https://text-encryption-using-steganography.onrender.com/" target="_blank" rel="noopener noreferrer">Live demo ↗</a><a href="https://github.com/jaiswal-sonal/text-encryption-using-steganography.git" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div></div></article>
+          <article class="project-card" data-category="ai"><div class="project-visual code-review"><div class="review-mock"><div class="review-sidebar"></div><div class="review-code"><i></i><i></i><i></i><i></i></div><div class="review-result">AI review</div></div></div><div class="project-copy"><div class="project-number">02</div><p class="project-type">AI Application · REST API</p><h3>AI Code Reviewer</h3><p>Automated code analysis powered by Google Generative AI, with syntax highlighting and structured feedback.</p><div class="tags"><span>Node.js</span><span>Express.js</span><span>Axios</span></div><div class="project-actions"><a href="https://ai-code-reviewer-d0nlxhmya-sonal-jaiswals-projects-59e87661.vercel.app/" target="_blank" rel="noopener noreferrer">Live demo ↗</a><a href="https://github.com/jaiswal-sonal/AI_CODE_REVIEWER.git" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div></div></article>
+          <article class="project-card" data-category="fullstack"><div class="project-visual pinterest"><div class="pin-mock"><span></span><span></span><span></span><span></span><span></span><span></span></div></div><div class="project-copy"><div class="project-number">03</div><p class="project-type">Social Platform · Backend</p><h3>Pinterest-inspired Platform</h3><p>A scalable image-sharing platform with authentication, RESTful APIs, media uploads, and AI-driven features.</p><div class="tags"><span>MongoDB</span><span>Passport.js</span><span>ChatGPT API</span></div><div class="project-actions"><a href="https://github.com/jaiswal-sonal/printrest_clone.git" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div></div></article>
+        </div>
+      </div>
+    </section>
+    <section class="experience section" id="experience">
+      <div class="container experience-grid">
+        <div class="section-heading"><p class="kicker">Experience</p><h2>Learning by<br><em>building.</em></h2></div>
+        <div class="timeline">
+          <article class="timeline-item"><time>Aug — Sep 2024</time><div><span class="timeline-dot"></span><h3>Data Science Intern</h3><p class="company">IBM · Lucknow</p><p>Built ML models with TensorFlow, PyTorch, and Scikit-learn. Used Jupyter Notebook and Anaconda for analysis, visualization, API data collection, and web scraping.</p><a class="certificate-link" href="https://media.licdn.com/dms/image/v2/D5622AQHBzmmyh0ni3A/feedshare-shrink_1280/feedshare-shrink_1280/0/1733305427860?e=1797465600&amp;v=beta&amp;t=QaAB6AiW7czwAHrQN7E8BXyFFxzPSQjXIFkBg-a87OQ" target="_blank" rel="noopener noreferrer">View internship certificate ↗</a></div></article>
+          <article class="timeline-item"><time>Sep — Oct 2023</time><div><span class="timeline-dot"></span><h3>Full Stack &amp; Data Analytics Intern</h3><p class="company">IBM · Lucknow</p><p>Developed RESTful APIs and microservices with Node.js and Express.js, plus full stack features and data analytics workflows.</p></div></article>
+        </div>
+      </div>
+    </section>
+    <section class="achievement"><div class="container achievement-grid"><div><p class="kicker">Achievement</p><h2>Winner at Smart India Hackathon 2026</h2></div><p>College-level winner for <strong>Smart Mandi: Farmer Procurement (Problem Statement 32)</strong>. Building the prototype into a complete application.</p></div></section>
+    <section class="resume section" id="resume"><div class="container resume-card"><div><p class="kicker">Resume</p><h2>Want the full profile?</h2><p>Download Sonal Jaiswal's complete resume as a PDF.</p></div><a class="button button-primary" href="assets/Sonal_Jaiswal_Resume.pdf" download="Sonal_Jaiswal_Resume.pdf">Download PDF <span>↓</span></a></div></section>
+    <section class="contact section" id="contact">
+      <div class="container contact-grid"><div><p class="kicker">Get in touch</p><h2>Have a project?<br><em>Let’s build it.</em></h2><p>I’m open to frontend, React, web development, and software engineering opportunities.</p></div><div class="contact-card"><a href="mailto:jaiswalsonal338@gmail.com"><span>Email</span><strong>jaiswalsonal338@gmail.com</strong><b>↗</b></a><a href="tel:+919369182750"><span>Phone</span><strong>+91 9369182750</strong><b>↗</b></a><a href="https://www.linkedin.com/in/sonal-jaiswal-121565302/" target="_blank" rel="noopener noreferrer"><span>LinkedIn</span><strong>View profile</strong><b>↗</b></a><a href="https://github.com/jaiswal-sonal/jaiswal-sonal" target="_blank" rel="noopener noreferrer"><span>GitHub</span><strong>View repositories</strong><b>↗</b></a></div></div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
